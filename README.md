@@ -22,7 +22,7 @@ Name: Quiz App.postman_collection.json
 Import this collection in your Postman App and you can access all the endpoints build in this quiz app.
 
 ### Project Demo
-**Host URL:**https://quiz-app-os77.onrender.com
+**Host URL:** https://quiz-app-os77.onrender.com
 
 **Endpoints**
 1. /users/register
