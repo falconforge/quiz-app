@@ -23,6 +23,7 @@ Import this collection in your Postman App and you can access all the endpoints 
 
 ### Project Demo
 **Host URL:**https://quiz-app-os77.onrender.com
+
 **Endpoints**
 1. /users/register
 2. /users/login
