@@ -1,10 +1,15 @@
 import morgan from 'morgan';
 import fs from 'fs';
 import path from 'path';
-import { format } from 'date-fns'; // You can also use moment.js for date formatting
+import { fileURLToPath } from 'url';
+import { format } from 'date-fns';
+
+// Use fileURLToPath to get the __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const logger = (app) => {
-  // Format the current date for the filename (e.g., '2025-01-04')
+  // Format the current date for the filename
   const date = format(new Date(), 'yyyy-MM-dd');
   
   // Create a log file name based on the current date
