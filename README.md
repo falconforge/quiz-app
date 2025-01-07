@@ -60,8 +60,6 @@ Base URl: localhost:3000
 
 Token: Copy it from the response of Login API.
 
-### Project Demo
-**Host URL:** https://quiz-app-os77.onrender.com
 
 **API Documentation:**
 
