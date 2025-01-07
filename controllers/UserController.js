@@ -7,6 +7,9 @@ const UserController = {
       const user = await UserService.register(req.body);
       return RequestHandler.response(res, 201, 'User registered successfully', user);
     } catch (error) {
+      if(error?.message == "User already exists!"){
+        return RequestHandler.response(res, 409, 'User already exists!', {});
+      }
       return RequestHandler.response(res, 500, error.message);
     }
   },

@@ -4,31 +4,65 @@ This project is about creating MCQ quiz with multiple options where one answer i
 ### Process to run locally
 **NodeJs**
 1. Clone the repository
-2. cd quiz-app
-3. npm i
-4. change the secrets in .env
-5. npm run dev
+```
+git clone git@github.com:falconforge/quiz-app.git
+```
+2. Change directory
+```
+cd quiz-app
+git checkout master
+```
+3. Install the dependencies
+```
+npm i
+```
+4. Change the secrets in .env
+5. Run project
+```
+npm run dev
+```
 
 **Docker**
 1. Clone the repository
-2. cd quiz-app
-3. change the secrets in .env
-4. docker-compose run --rm nodeapp npm install
-5. docker-compose up --build
+```
+git clone git@github.com:falconforge/quiz-app.git
+```
+2. Change directory
+```
+cd quiz-app
+git checkout master
+```
+3. Change the secrets in .env
+4. Run project
+```
+docker-compose up --build
+```
+
+
+**Jest Testing:**
+
+Note: Make sure your database is connected.
+
+Run below command from root directory of the project
+```
+npm jest --runInBand
+```
 
 **Postman Collection**
 
 Name: Quiz App.postman_collection.json
+
 Import this collection in your Postman App and you can access all the endpoints build in this quiz app.
+
+**Note:** Make sure one environment is created with "<i>baseUrl<i>" and "<i>token<i>" variables.
+
+Base URl: localhost:3000
+
+Token: Copy it from the response of Login API.
 
 ### Project Demo
 **Host URL:** https://quiz-app-os77.onrender.com
 
-**Endpoints**
-1. /users/register
-2. /users/login
-3. /users/profile
-4. /quiz/create-quiz
-5. /quiz/get-quiz?quizId=1
-6. /quiz/post-answer
-7. /quiz/get-result?quizId=1
+**API Documentation:**
+
+[Postman Documentation](https://documenter.getpostman.com/view/18690981/2sAYJAdxVJ)
