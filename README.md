@@ -45,7 +45,7 @@ Note: Make sure your database is connected.
 
 Run below command from root directory of the project
 ```
-npm jest --runInBand
+npx jest --runInBand
 ```
 
 **Postman Collection**
