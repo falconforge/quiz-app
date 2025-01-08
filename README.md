@@ -58,7 +58,7 @@ Import this collection in your Postman App and you can access all the endpoints 
 
 Base URl: localhost:3000
 
-Token: Copy it from the response of Login API.
+Token: Copy it from the response of Login API. DO NOT ADD 'Bearer' at start of token. Copy and paste as it is.
 
 
 **API Documentation:**
